@@ -1,5 +1,5 @@
 # Resultado visual esperado:
-<img src="https://user-images.githubusercontent.com/56482367/105797453-c325ae80-5f6e-11eb-9fe9-0ae50088ad20.png">
+<img src="https://user-images.githubusercontent.com/56482367/105928310-7ac8c800-6024-11eb-9b30-64d4e8393944.png">
 
 
 # Example app with styled-components
