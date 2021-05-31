@@ -1,43 +1,202 @@
 {
-  "bg": "https://wallpapercave.com/wp/zLeVJhN.jpg",
-  "title": "Friends Quiz",
-  "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
-  "questions": [
-    {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
-      "answer": 2,
-      "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
-      ]
-    },
-    {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
-      "answer": 0,
-      "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
-      ]
+    "bg": "https://wallpapercave.com/wp/zLeVJhN.jpg",
+    "title": "Friends Quiz",
+    "description": "Teste os seus conhecimentos sobre Friends..",
+    "questions": [
+        {
+            "image": "https://img.wattpad.com/42ff58c8e48c6b99da09e8d70cd4c98f71eec89b/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6e4154746764396152325a6b6d673d3d2d33392e313633316363396631636433666434383838393331333136343637302e676966",
+            "title": "Como se chama a nossa Rachel Green ?",
+            "description": "essa é fácil hein ?!",
+            "answer": 3,
+            "alternatives": [
+                "Rachel Elizabeth Green",
+                "Rachel Ray Green",
+                "Rachel Consuela Green",
+                "Rachel Karen Green"
+            ]
+        },
+        {
+            "image": "https://i.gifer.com/3NvE.gif",
+            "title": "Qual é o emprego do Chandler ?",
+            "description": "Cuidado que essa pergunta fez a Monica e a Rachel perderem o apartamento",
+            "answer": 2,
+            "alternatives": [
+                "Analista de banco de dados",
+                "Contador",
+                "Processador de dados e estatísticas",
+                "Ninguém sabe até hoje"
+            ]
+        },
+        {
+            "image": "https://media.giphy.com/media/hMkPriZTKphdu/giphy.gif",
+            "title": "Quem desliga o abajur na abertura ?",
+            "description": "Vamos ver se você prestava atenção ou só batia palminha",
+            "answer": 0,
+            "alternatives": [
+                "Monica",
+                "Chandler",
+                "Joey",
+                "Rachel"
+            ]
+        },
+        {
+            "image": "https://thumbs.gfycat.com/BowedThornyAcouchi-size_restricted.gif",
+            "title": " Quantas páginas tem a carta que Rachel escreveu para Ross ?",
+            "description": "FRONT AND BACK!!!",
+            "answer": 2,
+            "alternatives": [
+                "20 páginas frente e verso",
+                "9 páginas frente e verso",
+                "18 páginas frente e verso",
+                "28 páginas frente e verso"
+            ]
+        },
+        {
+            "image": "https://i.makeagif.com/media/3-08-2016/dsXfBI.gif",
+            "title": "Onde foi o primeiro beijo de Rachel e Ross ? ",
+            "description": "será que você lembra ?",
+            "answer": 1,
+            "alternatives": [
+                "Na cafeteria",
+                "Na lavanderia",
+                "No museu",
+                "Na sala"
+            ]
+        },
+        {
+            "image": "https://i.gifer.com/origin/d5/d52d7e120c4092ed7d3caeca1ecb9b09_w200.gif",
+            "title": "Qual é o nome do macaco do Ross ?",
+            "description": "Ele é tão fofinho!",
+            "answer": 2,
+            "alternatives": [
+                "Michael",
+                "Joel",
+                "Marcel",
+                "Tadeu"
+            ]
+        },
+        {
+            "image": "https://media.metrolatam.com/2018/10/03/tumblrm59q3xefzf1r57t9jo1500-a19b0dbc2a210e7442f291e7cfc93da2.gif",
+            "title": "Quem tem três mamilos ?",
+            "description": "bizarro!",
+            "answer": 0,
+            "alternatives": [
+                "Chandler",
+                "Joey",
+                "Monica",
+                "Gunther"
+            ]
+        },
+        {
+            "image": "http://static.glamurama.uol.com.br//2016/05/FRIENDS9.gif",
+            "title": "Quem urinou na Monica quando ela foi queimada pela água-viva ?",
+            "description": "Discovery Channel salva vidas!",
+            "answer": 3,
+            "alternatives": [
+                "Ninguém conseguiu",
+                "Chandler",
+                "Ela mesma",
+                "Joey"
+            ]
+        },
+        {
+            "image": "http://24.media.tumblr.com/04921f69a93b1a9172709b37874e80f9/tumblr_mgwngmn0Je1r82bbmo2_500.gif",
+            "title": "Quem a Phoebe assaltou quando era criança ?",
+            "description": "Pobrezinho.. mas, rendeu boas risadas",
+            "answer": 1,
+            "alternatives": [
+                "Chandler",
+                "Ross",
+                "Joey",
+                "Gunther"
+            ]
+        },
+        {
+            "image": "https://66.media.tumblr.com/40a7592b0e01a492938bd38348f3208b/tumblr_padfqnLyH31r76to2o3_r1_250.gifv",
+            "title": "Como se chama a namorada da Carol ?",
+            "description": "Alguém shippa ?",
+            "answer": 3,
+            "alternatives": [
+                "Leny",
+                "Janice",
+                "Emily",
+                "Susan"
+            ]
+        },
+        {
+            "image": "http://images6.fanpop.com/image/photos/41300000/tumblr-p7khtvxWgf1rqz9syo1-540-joey-and-chandler-41381159-540-270.gif",
+            "title": "Quais eram os animais de estimação de Chandler e Joey ?",
+            "description": "Acho que todo mundo queria um em casa :)",
+            "answer": 2,
+            "alternatives": [
+                "Um peixe e um pássaro",
+                "Um macaco e um gato",
+                "Um pato e um galo",
+                "Um gato e uma galinha"
+            ]
+        },
+        {
+            "image": "https://capricho.abril.com.br/wp-content/uploads/2019/07/ross-chorando-friends.gif",
+            "title": "Quantas vezes Ross se casou ?",
+            "description": "Mais fácil contar quantas vezes se divorciou..",
+            "answer": 0,
+            "alternatives": [
+                "Três vezes",
+                "Duas vezes",
+                "Quatro vezes",
+                "Uma vez"
+            ]
+        },
+        {
+            "image": "https://media.giphy.com/media/OGMR0vvHYIkyQ/giphy.gif",
+            "title": "Quem foi o último a completar 30 anos ?",
+            "description": "Why God?!? Why ?!?",
+            "answer": 0,
+            "alternatives": [
+                "Rachel",
+                "Joey",
+                "Phoebe",
+                "Ross"
+            ]
+        },
+        {
+            "image": "https://i.pinimg.com/originals/9d/16/44/9d1644fd8e75d75693da516ca7428c9e.gif",
+            "title": "O que acontece quando Joey se tranca no armário ?",
+            "description": "Péssima hora para se esconder",
+            "answer": 2,
+            "alternatives": [
+                "Ele flaga Monica e Chandler",
+                "Ross rouba seu sanduiche",
+                "Sua casa é roubada",
+                "Levam o pato e o galo"
+            ]
+        },
+        {
+            "image": "http://31.media.tumblr.com/8888c7b8cd975d938d2094a356ddb9cc/tumblr_mf7ayrvoCn1qjd1y3o1_500.gif",
+            "title": "Quantas temporadas tem a série ?",
+            "description": "",
+            "answer": 0,
+            "alternatives": [
+                "10 temporadas",
+                "12 temporadas",
+                "9 temporadas",
+                "13 temporadas"
+            ]
+        }
+    ],
+    "external": [
+        "https://aluraquiz-base.alura-challenges.vercel.app/",
+        "https://aluraquiz-css.omariosouto.vercel.app/"
+    ],
+    "theme": {
+        "colors": {
+            "primary": "#7776BC",
+            "secondary": "#7f74dc", 
+            "mainBg": "#262626",
+            "contrastText": "#FFFFFF",
+            "wrong": "#FF5722",
+            "success": "#4CAF50"
+        },
+        "borderRadius": "4px"
     }
-  ],
-  "external": [
-    ""
-  ],
-  "theme": {
-    "colors": {
-      "primary": "#7779d5",
-      "secondary": "#black",
-      "mainBg": "#171B35",
-      "contrastText": "#FFFFFF",
-      "wrong": "#FF5722",
-      "success": "#4CAF50"
-    },
-    "borderRadius": "4px"
-  }
 }

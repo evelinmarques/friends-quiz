@@ -1,77 +1,109 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import Head from 'next/head';
-import { useRouter } from 'next/router';
-
-import db from '../db.json';
-import Widget from '../src/components/Widget';
-import Footer from '../src/components/Footer';
-import GitHubCorner from '../src/components/GitHubCorner';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizLogo from '../src/components/QuizLogo';
-
-
-export const QuizContainer = styled.div`
-  width: 100%;
-  max-width: 350px;
-  padding-top: 45px;
-  margin: auto 10%;
-  @media screen and (max-width: 500px) {
-    margin: auto;
-    padding: 15px;
-  }
-`;
+import db from '../db.json'
+import Link from '../source/components/Link'
+import Head from 'next/head'
+import styled from 'styled-components' 
+import { motion } from 'framer-motion'
+import { useRouter } from 'next/router'
+import Input from '../source/components/Input'
+import Footer from '../source/components/Footer'
+import Widget from '../source/components/Widget'
+import Button from '../source/components/Button'
+import QuizLogo from '../source/components/QuizLogo'
+import GitHubCorner from '../source/components/GitHubCorner'
+import QuizContainer from '../source/components/QuizContainer'
+import QuizBackground from '../source/components/QuizBackground'
 
 export default function Home() {
-  const router = useRouter();
-  const [name, setName] = React.useState('');
-  console.log('Retorno do useStane', name, setName);
-
+  const router = useRouter()
+  const [name, setName] = React.useState('')
   return (
-   <QuizBackground backgroundImage={db.bg}>
-     <Head>
-        <title>Friends - Quiz</title>
+    <QuizBackground backgroundImage={db.bg}>
+      <Head>
+        <title>Friends Quiz</title>
       </Head>
-     <QuizContainer>
-       <QuizLogo />
-       <Widget>
+
+      <QuizContainer>
+      <QuizLogo/>
+        <Widget
+         as={motion.section}
+         transiton={{ delay: 0.5, duration: 0.5 }}
+         variants={{
+           show: { opacity: 1, y: '0'},
+           hidden: { opacity: 0, y: '100%'},
+         }}
+         initial="hidden"
+         animate="show"
+        >
           <Widget.Header>
-              <h1>Friends Quiz</h1>
-           </Widget.Header>
-            <Widget.Content>
-              <form onSubmit={function (infosdoEvento) {
-                infosdoEvento.preventDefault();
-                router.push(`/quiz?name=${name}`);
-                console.log('Fazendo uma submissão para o react');
-              }}
-              >
-                <input 
-                  onChange={function (infosdoEvento) {
-                    console.log(infosdoEvento.target.value);
-                    //Stade
-                    setName(infosdoEvento.target.value);
-                  }}
-                  placeholder="Diz ai seu nome :)"
-                />
-                <button type="submit" disabled={name.length === 0}>
-                  Jogar 
-                  {name}
-                </button>
-              </form>
-            </Widget.Content>
-       </Widget>
-
-       <Widget>
-         <Widget.Content>
             <h1>Friends Quiz</h1>
+          </Widget.Header>
+          <Widget.Content>
+            <form onSubmit={function (e) {
+              e.preventDefault()
+              router.push(`Quiz?name=${name}`)
+              console.log("Teste Évelin Marques")
+            }}>
+              <Input
+                placeholder="Diz ai seu nome :)"
+                onChange={(e) => setName(e.target.value)}
+                name="NomeDoUsuario"
+                autoComplete="off"
+                maxLength="20"
+                value={name}
+              />
+              <Button type="submit" disabled={!name}>
+              {`Eu, ${name} prometo dar o meu melhor `}
+              </Button>
+            </form>
+          </Widget.Content>
+        </Widget>
 
-            <p>em construção</p>
-         </Widget.Content>
-       </Widget>
-        <Footer />
+        <Widget
+          as={motion.section}
+          transiton={{ delay: 0.5, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1, y: '0'},
+            hidden: { opacity: 0, y: '100%'},
+          }}
+          initial="hidden"
+          animate="show"
+        >
+        <Widget.Content>
+            <p>Quizes da Galera</p>
+            <ul>
+              {db.external.map(( link ) => {
+                const [projectName, githubUser] = link
+                .replace(/\//g, '')
+                .replace('https:', '')
+                .replace('.vercel.app', '')
+                .split('.');
+
+                return (
+                  <li key={link}>
+                    <Widget.Topic 
+                      as={Link}
+                      href={`/quiz/${projectName}___${githubUser}`}
+                    >
+                       {`${githubUser}/${projectName}`} 
+                    </Widget.Topic>
+                  </li>
+                )
+              })}
+            </ul>
+          </Widget.Content>
+        </Widget>
+        <Footer
+          as={motion.section}
+          transiton={{ delay: 0.5, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1, y: '0'},
+            hidden: { opacity: 0, y: '100%'},
+          }}
+          initial="hidden"
+          animate="show"
+        />
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/evelinmarques"/>
-    </QuizBackground> 
-  );
-  
+    </QuizBackground>
+  )
 }
